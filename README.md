@@ -1,0 +1,2 @@
+# openfst
+OpenFST practical
