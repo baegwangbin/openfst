@@ -1,0 +1,177 @@
+2019-01-11 16:21:27,729 DEBUG: Risk-free beam-search pruning enabled
+2019-01-11 16:21:27,730 INFO: Setting up tensor2tensor library...
+INFO:tensorflow:Importing user module tensor2tensor-usr from path /homes/wjb31/src/t2t.17Sep18
+2019-01-11 16:21:27,730 INFO: Importing user module tensor2tensor-usr from path /homes/wjb31/src/t2t.17Sep18
+INFO:tensorflow:Setting T2TModel mode to 'infer'
+2019-01-11 16:21:27,764 INFO: Setting T2TModel mode to 'infer'
+INFO:tensorflow:Setting hparams.layer_prepostprocess_dropout to 0.0
+2019-01-11 16:21:27,765 INFO: Setting hparams.layer_prepostprocess_dropout to 0.0
+INFO:tensorflow:Setting hparams.symbol_dropout to 0.0
+2019-01-11 16:21:27,765 INFO: Setting hparams.symbol_dropout to 0.0
+INFO:tensorflow:Setting hparams.label_smoothing to 0.0
+2019-01-11 16:21:27,765 INFO: Setting hparams.label_smoothing to 0.0
+INFO:tensorflow:Setting hparams.attention_dropout to 0.0
+2019-01-11 16:21:27,766 INFO: Setting hparams.attention_dropout to 0.0
+INFO:tensorflow:Setting hparams.dropout to 0.0
+2019-01-11 16:21:27,766 INFO: Setting hparams.dropout to 0.0
+INFO:tensorflow:Setting hparams.relu_dropout to 0.0
+2019-01-11 16:21:27,766 INFO: Setting hparams.relu_dropout to 0.0
+INFO:tensorflow:Using variable initializer: uniform_unit_scaling
+2019-01-11 16:21:27,875 INFO: Using variable initializer: uniform_unit_scaling
+INFO:tensorflow:Transforming 'targets' with symbol_modality_150_512.targets_bottom
+2019-01-11 16:21:27,911 INFO: Transforming 'targets' with symbol_modality_150_512.targets_bottom
+WARNING:tensorflow:From /homes/wjb31/src/anaconda2-5.2.0-tf.1.10-cpu.air/lib/python2.7/site-packages/tensorflow/python/framework/function.py:986: calling create_op (from tensorflow.python.framework.ops) with compute_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+Shapes are always computed; don't use the compute_shapes as it has no effect.
+2019-01-11 16:21:28,377 WARNING: From /homes/wjb31/src/anaconda2-5.2.0-tf.1.10-cpu.air/lib/python2.7/site-packages/tensorflow/python/framework/function.py:986: calling create_op (from tensorflow.python.framework.ops) with compute_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+Shapes are always computed; don't use the compute_shapes as it has no effect.
+INFO:tensorflow:Building model body
+2019-01-11 16:21:28,388 INFO: Building model body
+INFO:tensorflow:Transforming body output with symbol_modality_150_512.top
+2019-01-11 16:21:32,468 INFO: Transforming body output with symbol_modality_150_512.top
+INFO:tensorflow:Graph was finalized.
+2019-01-11 16:21:32,895 INFO: Graph was finalized.
+2019-01-11 16:21:32.895348: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /homes/wjb31/MLMI/MLMI3/practical/lm-gec/chars/t2t_train/languagemodel_en_lmgec1b_char/transformer-transformer_base_v2_large_batch8/average/avg_20-0
+2019-01-11 16:21:34,951 INFO: Restoring parameters from /homes/wjb31/MLMI/MLMI3/practical/lm-gec/chars/t2t_train/languagemodel_en_lmgec1b_char/transformer-transformer_base_v2_large_batch8/average/avg_20-0
+INFO:tensorflow:Running local_init_op.
+2019-01-11 16:21:35,340 INFO: Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2019-01-11 16:21:35,385 INFO: Done running local_init_op.
+2019-01-11 16:21:35,516 INFO: Initialized predictor t2t (weight: 0.1875)
+2019-01-11 16:21:35,516 INFO: Initialized predictor fst (weight: 0.171875)
+2019-01-11 16:21:35,548 INFO: Start time: 1547223695.55
+2019-01-11 16:21:35,548 INFO: The --range does not seem to specify a numerical range (invalid literal for int() with base 10: 'output/char.translm_5gfst_4_jflegdev/remaining_ids'). Interpreting as file name..
+2019-01-11 16:21:35,548 DEBUG: Temporary range file: output/char.translm_5gfst_4_jflegdev/sgnmt-tmp.4ae02e0b-7239-4ff0-9c53-93c7d511fc96
+2019-01-11 16:21:35,554 DEBUG: Fetched ID 11 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:21:35,554 INFO: Next sentence (ID: 11): 32 14 11 8 4 6 13 5 4 23 8 12 28 4 8 19 4 6 13 5 4 18 5 15 9 7 4 26 4 6 5 14 5 27 9 11 9 8 10 4 26 4 18 7 20 7 56 9 10 5 11 4 26 4 7 10 15 4 5 27 5 12 22 4 11 6 17 19 19 4 18 7 15 5 4 19 8 12 4 21 17 24 14 9 16 9 6 22 4 7 19 19 5 16 6 11 4 6 13 5 4 5 18 8 6 9 8 10 11 4 8 19 4 18 7 10 22 4 21 5 8 21 14 5 4 7 12 8 17 10 15 4 6 13 5 4 23 8 12 14 15 4 26 4 5 10 16 8 17 12 7 20 9 10 20 4 6 13 5 18 4 6 8 4 24 17 22 4 7 10 15 4 24 17 22 4 7 10 22 6 13 9 10 20 4 6 13 5 22 4 16 7 10 4 25 4
+2019-01-11 16:21:35,562 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0011.fst
+2019-01-11 16:27:41,789 INFO: Decoded (ID: 11): 32 14 11 8 4 6 13 5 4 23 8 12 28 4 8 19 4 6 13 5 4 18 5 15 9 7 4 26 4 6 5 14 5 27 9 11 9 8 10 4 26 4 18 7 20 7 56 9 10 5 11 4 26 4 7 10 15 4 5 27 5 12 22 4 11 6 17 19 19 4 18 7 15 5 4 19 8 12 4 21 17 24 14 9 16 9 6 22 4 7 19 19 5 16 6 11 4 6 13 5 4 5 18 8 6 9 8 10 11 4 8 19 4 18 7 10 22 4 21 5 8 21 14 5 4 7 12 8 17 10 15 4 6 13 5 4 23 8 12 14 15 4 26 4 5 10 16 8 17 12 7 20 9 10 20 4 6 13 5 18 4 6 8 4 24 17 22 4 7 10 15 4 24 17 22 4 7 10 22 6 13 9 10 20 4 6 13 5 22 4 16 7 10 4 25 4
+2019-01-11 16:27:41,796 INFO: Stats (ID: 11): score=-33.235737 num_expansions=762 time=366.24
+2019-01-11 16:27:41,802 DEBUG: Fetched ID 227 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:27:41,802 INFO: Next sentence (ID: 227): 37 10 4 6 13 9 11 4 16 7 11 5 4 7 4 6 8 17 12 4 20 17 9 15 5 4 16 7 10 4 24 5 4 13 5 14 21 19 17 14 4 6 8 4 16 8 18 21 14 5 6 5 4 6 13 5 4 6 12 9 21 4 9 10 4 27 5 12 22 4 14 5 11 11 4 6 9 18 5 4 7 11 4 16 8 18 21 7 12 5 15 4 6 8 4 23 13 7 6 4 8 10 5 4 18 9 20 13 6 4 5 10 15 4 17 21 4 11 21 5 10 15 9 10 20 4 9 19 4 8 10 5 4 15 5 16 9 15 5 11 4 6 8 4 5 41 21 14 8 12 5 4 6 13 5 4 21 14 7 16 5 4 13 9 18 11 5 14 19 75 13 5 12 11 5 14 19 4 25 4
+2019-01-11 16:27:41,818 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0227.fst
+2019-01-11 16:32:53,153 INFO: Decoded (ID: 227): 37 10 4 6 13 9 11 4 16 7 11 5 4 7 4 6 8 17 12 4 20 17 9 15 5 4 16 7 10 4 24 5 4 13 5 14 21 19 17 14 4 6 8 4 16 8 18 21 14 5 6 5 4 6 13 5 4 6 12 9 21 4 9 10 4 27 5 12 22 4 14 5 11 11 4 6 9 18 5 4 7 11 4 16 8 18 21 7 12 5 15 4 6 8 4 23 13 7 6 4 8 10 5 4 18 9 20 13 6 4 5 10 15 4 17 21 4 11 21 5 10 15 9 10 20 4 9 19 4 8 10 5 4 15 5 16 9 15 5 11 4 6 8 4 5 41 21 14 8 12 5 4 6 13 5 4 21 14 7 16 5 4 13 9 18 11 5 14 19 75 13 5 12 11 5 14 19 4 25 4
+2019-01-11 16:32:53,154 INFO: Stats (ID: 227): score=-39.498417 num_expansions=701 time=311.35
+2019-01-11 16:32:53,161 DEBUG: Fetched ID 26 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:32:53,162 INFO: Next sentence (ID: 26): 37 10 4 6 13 5 4 16 7 11 5 4 8 19 4 22 8 17 10 20 4 21 5 8 21 14 5 4 6 13 5 4 24 5 11 6 4 23 7 22 4 9 11 4 11 6 17 15 22 9 10 20 4 7 11 4 13 7 12 15 4 7 11 4 21 8 11 11 9 24 14 5 4 6 8 4 20 5 6 4 24 5 6 6 5 12 4 20 12 7 15 5 11 4 11 8 4 9 10 4 6 13 5 4 19 17 6 17 12 5 4 6 13 5 22 4 23 9 14 14 4 13 7 27 5 4 24 5 6 6 5 12 4 16 13 7 10 16 5 4 6 8 4 19 9 10 15 4 24 5 6 6 5 12 4 54 8 24 11 4 25 4
+2019-01-11 16:32:53,171 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0026.fst
+2019-01-11 16:36:59,704 INFO: Decoded (ID: 26): 37 10 4 6 13 5 4 16 7 11 5 4 8 19 4 22 8 17 10 20 4 21 5 8 21 14 5 4 6 13 5 4 24 5 11 6 4 23 7 22 4 9 11 4 11 6 17 15 22 9 10 20 4 7 11 4 13 7 12 15 4 7 11 4 21 8 11 11 9 24 14 5 4 6 8 4 20 5 6 4 24 5 6 6 5 12 4 20 12 7 15 5 11 4 11 8 4 9 10 4 6 13 5 4 19 17 6 17 12 5 4 6 13 5 22 4 23 9 14 14 4 13 7 27 5 4 24 5 6 6 5 12 4 16 13 7 10 16 5 4 6 8 4 19 9 10 15 4 24 5 6 6 5 12 4 54 8 24 11 4 25 4
+2019-01-11 16:36:59,705 INFO: Stats (ID: 26): score=-28.030164 num_expansions=628 time=246.54
+2019-01-11 16:36:59,711 DEBUG: Fetched ID 35 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:36:59,711 INFO: Next sentence (ID: 35): 30 13 5 10 4 23 13 5 10 4 23 5 4 23 5 10 6 4 6 8 4 6 13 5 4 31 16 9 5 10 16 5 4 50 14 22 18 21 9 7 15 4 26 4 11 13 5 4 16 8 17 14 15 4 13 7 27 5 4 15 9 27 5 12 11 5 4 28 10 8 23 14 5 15 20 5 11 4 7 24 8 17 6 4 6 13 5 4 11 17 24 5 16 6 11 4 7 10 15 4 9 6 4 23 7 11 4 10 8 6 4 10 5 23 4 19 8 12 4 13 5 12 4 6 8 4 6 13 9 10 28 4 7 24 8 17 6 4 10 5 23 4 6 13 9 10 20 11 4 25 4
+2019-01-11 16:36:59,720 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0035.fst
+2019-01-11 16:40:34,221 INFO: Decoded (ID: 35): 30 13 5 10 4 23 13 5 10 4 23 5 4 23 5 10 6 4 6 8 4 6 13 5 4 31 16 9 5 10 16 5 4 50 14 22 18 21 9 7 15 4 26 4 11 13 5 4 16 8 17 14 15 4 13 7 27 5 4 15 9 27 5 12 11 5 4 28 10 8 23 14 5 15 20 5 4 7 24 8 17 6 4 6 13 5 4 11 17 24 54 5 16 6 4 7 10 15 4 9 6 4 23 7 11 4 10 8 6 4 10 5 23 4 19 8 12 4 13 5 12 4 6 8 4 6 13 9 10 28 4 7 24 8 17 6 4 10 5 23 4 6 13 9 10 20 11 4 25 4
+2019-01-11 16:40:34,222 INFO: Stats (ID: 35): score=-27.773558 num_expansions=571 time=214.51
+2019-01-11 16:40:34,229 DEBUG: Fetched ID 397 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:40:34,229 INFO: Next sentence (ID: 397): 35 7 12 17 11 7 20 5 4 9 10 4 6 13 5 4 55 10 9 6 5 15 4 31 6 7 6 5 11 4 9 11 4 27 5 12 22 4 9 18 21 8 12 6 7 10 6 4 9 10 4 5 27 5 12 22 4 15 7 22 4 14 9 19 5 4 26 4 7 11 23 5 14 14 4 7 11 4 9 10 4 18 7 10 22 4 14 7 6 9 10 7 18 5 12 9 16 7 10 4 16 8 17 10 6 12 9 5 11 4 26 4 7 10 15 4 6 13 9 12 15 23 8 12 14 15 4 16 8 17 10 6 12 9 5 11 4 25 4
+2019-01-11 16:40:34,234 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0397.fst
+2019-01-11 16:43:35,988 INFO: Decoded (ID: 397): 35 7 12 4 17 11 7 20 5 4 9 10 4 6 13 5 4 55 10 9 6 5 15 4 31 6 7 6 5 11 4 9 11 4 27 5 12 22 4 9 18 21 8 12 6 7 10 6 4 9 10 4 5 27 5 12 22 4 15 7 22 4 14 9 19 5 4 26 4 7 11 4 23 5 14 14 4 7 11 4 9 10 4 18 7 10 22 4 32 18 5 12 9 16 7 10 7 4 16 8 17 10 6 12 9 5 11 4 26 4 7 10 15 4 6 13 9 12 15 4 23 8 12 14 15 4 16 8 17 10 6 12 9 5 11 4 25 4
+2019-01-11 16:43:35,989 INFO: Stats (ID: 397): score=-24.278612 num_expansions=540 time=181.76
+2019-01-11 16:43:36,042 DEBUG: Fetched ID 66 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:43:36,042 INFO: Next sentence (ID: 66): 6 13 5 4 11 16 13 8 8 14 4 6 5 7 16 13 5 12 11 4 6 13 5 12 5 4 6 13 5 4 8 10 5 4 23 13 8 4 6 7 28 5 4 6 13 5 4 19 17 6 17 12 5 4 8 19 4 22 8 17 20 4 20 5 10 7 12 7 6 9 8 10 4 11 8 4 23 5 4 13 7 27 5 4 6 8 4 20 9 27 5 4 6 13 5 18 4 6 8 4 20 5 6 4 6 13 5 4 24 5 6 6 5 12 4 28 10 8 23 14 5 15 20 5 4 25 4
+2019-01-11 16:43:36,060 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0066.fst
+2019-01-11 16:46:16,273 INFO: Decoded (ID: 66): 6 13 5 4 11 16 13 8 8 14 4 6 5 7 16 13 5 12 11 4 6 13 5 12 5 4 6 13 5 4 8 10 5 11 4 23 13 8 4 6 7 28 5 4 6 13 5 4 19 17 6 17 12 5 4 8 19 4 22 8 17 12 4 20 5 10 5 12 7 6 9 8 10 4 11 8 4 23 5 4 13 7 27 5 4 6 8 4 20 9 27 5 4 6 13 5 18 4 6 8 4 20 5 6 4 6 13 5 4 24 5 6 6 5 12 4 28 10 8 23 14 5 15 20 5 4 25 4
+2019-01-11 16:46:16,274 INFO: Stats (ID: 66): score=-25.766413 num_expansions=500 time=160.23
+2019-01-11 16:46:16,281 DEBUG: Fetched ID 541 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:46:16,282 INFO: Next sentence (ID: 541): 50 10 4 6 13 5 4 8 6 13 5 12 4 13 7 10 15 4 26 4 11 9 5 10 6 9 11 6 4 7 20 12 5 5 4 6 13 7 6 4 6 13 5 4 21 12 5 15 7 6 8 12 11 4 7 12 5 4 24 5 10 5 19 9 16 9 7 14 4 6 8 4 16 8 10 6 12 8 14 4 6 13 5 4 21 8 21 17 14 7 6 9 8 10 4 6 8 19 4 6 13 5 4 18 5 10 13 7 15 5 10 4 25 4
+2019-01-11 16:46:16,287 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0541.fst
+2019-01-11 16:48:27,087 INFO: Decoded (ID: 541): 50 10 4 6 13 5 4 8 6 13 5 12 4 13 7 10 15 4 26 4 11 16 9 5 10 6 9 11 6 4 7 20 12 5 5 4 6 13 7 6 4 6 13 5 4 21 12 5 15 7 6 8 12 11 4 7 12 5 4 24 5 10 5 19 9 16 9 7 14 4 6 8 4 16 8 10 6 12 8 14 4 6 13 5 4 21 8 21 17 14 7 6 9 8 10 4 8 19 4 6 13 5 4 18 5 10 13 7 15 5 10 4 25 4
+2019-01-11 16:48:27,088 INFO: Stats (ID: 541): score=-22.661335 num_expansions=444 time=130.81
+2019-01-11 16:48:27,136 DEBUG: Fetched ID 222 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:48:27,137 INFO: Next sentence (ID: 222): 30 13 5 22 4 13 7 27 5 4 7 4 24 12 8 7 15 5 12 4 11 21 5 16 6 12 17 18 4 8 19 4 9 15 5 7 11 4 6 13 7 6 4 6 13 5 22 4 16 7 10 4 15 5 27 5 14 8 21 4 9 10 6 8 4 16 8 18 21 5 6 5 10 16 5 11 4 6 13 12 8 17 20 13 8 17 6 4 6 13 5 9 12 4 11 6 17 15 5 10 6 4 14 9 19 5 4 25 4
+2019-01-11 16:48:27,142 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0222.fst
+2019-01-11 16:50:23,737 INFO: Decoded (ID: 222): 30 13 5 22 4 13 7 27 5 4 7 4 24 12 8 7 15 5 12 4 11 21 5 16 6 12 17 18 4 8 19 4 9 15 5 7 11 4 6 13 7 6 4 6 13 5 22 4 16 7 10 4 15 5 27 5 14 8 21 4 9 10 6 8 4 16 8 18 21 5 6 5 10 16 5 11 4 6 13 12 8 17 20 13 8 17 6 4 6 13 5 9 12 4 11 6 17 15 5 10 6 4 14 9 19 5 4 25 4
+2019-01-11 16:50:23,738 INFO: Stats (ID: 222): score=-18.557887 num_expansions=408 time=116.60
+2019-01-11 16:50:23,742 DEBUG: Fetched ID 546 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:50:23,742 INFO: Next sentence (ID: 546): 30 13 5 22 4 5 41 21 14 7 9 10 4 6 13 5 4 11 21 5 16 9 19 9 16 4 21 8 9 10 6 11 4 17 11 5 9 10 20 4 6 13 5 4 5 41 7 18 21 14 5 11 4 7 24 8 17 6 4 15 9 10 8 11 7 17 12 11 4 34 11 4 24 5 13 7 24 9 7 12 4 7 10 15 4 21 13 22 11 9 16 7 14 4 19 7 16 5 4 25 4
+2019-01-11 16:50:23,746 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0546.fst
+2019-01-11 16:51:55,328 INFO: Decoded (ID: 546): 30 13 5 22 4 5 41 21 14 7 9 10 4 6 13 5 4 11 21 5 16 9 19 9 16 4 21 8 9 10 6 11 4 17 11 9 10 20 4 6 13 5 4 5 41 7 18 21 14 5 11 4 8 19 4 15 9 10 8 11 7 17 12 4 34 11 4 24 5 13 7 24 9 7 12 4 7 10 15 4 21 13 22 11 9 16 7 14 4 19 7 16 5 4 25 4
+2019-01-11 16:51:55,329 INFO: Stats (ID: 546): score=-23.393792 num_expansions=342 time=91.59
+2019-01-11 16:51:55,334 DEBUG: Fetched ID 169 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:51:55,335 INFO: Next sentence (ID: 169): 30 13 9 11 4 7 12 20 17 5 18 5 10 6 4 9 11 4 10 8 6 4 8 10 14 22 4 6 12 17 5 4 10 8 23 4 26 4 9 6 4 9 11 4 11 9 10 16 5 4 7 20 5 11 4 26 4 9 4 23 7 10 6 4 6 8 4 6 7 14 28 4 8 10 4 7 4 14 9 27 5 4 5 41 7 18 21 14 5 4 8 19 4 31 9 12 4 25 4
+2019-01-11 16:51:55,342 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0169.fst
+2019-01-11 16:53:30,828 INFO: Decoded (ID: 169): 30 13 9 11 4 7 12 20 17 18 5 10 6 4 9 11 4 10 8 6 4 8 10 14 22 4 6 12 17 5 4 10 8 23 4 26 4 9 6 4 9 11 4 11 9 10 16 5 4 7 20 5 4 26 4 9 4 23 7 10 6 4 6 8 4 6 7 14 28 4 6 8 4 7 4 14 9 27 5 4 5 41 7 18 21 14 5 4 8 19 4 31 9 12 4 25 4
+2019-01-11 16:53:30,829 INFO: Stats (ID: 169): score=-24.580596 num_expansions=378 time=95.49
+2019-01-11 16:53:30,833 DEBUG: Fetched ID 128 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:53:30,833 INFO: Next sentence (ID: 128): 30 13 5 12 5 4 16 7 10 4 24 5 4 7 10 22 4 8 6 13 5 12 4 6 13 5 8 12 9 5 11 4 7 24 8 17 6 4 18 9 20 12 7 6 9 10 20 4 12 5 7 11 8 10 4 7 10 15 4 7 24 8 17 6 4 6 13 5 4 18 5 6 13 8 15 11 4 8 19 4 18 9 20 12 7 6 9 10 20 4 25 4
+2019-01-11 16:53:30,838 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0128.fst
+2019-01-11 16:54:56,811 INFO: Decoded (ID: 128): 30 13 5 12 5 4 16 7 10 4 24 5 4 7 10 22 4 8 6 13 5 12 4 6 13 5 8 12 9 5 11 4 7 24 8 17 6 4 18 9 20 12 7 6 9 10 20 4 12 5 7 11 8 10 4 7 10 15 4 7 24 8 17 6 4 6 13 5 4 18 5 6 13 8 15 11 4 8 19 4 18 9 20 12 7 6 9 10 20 4 25 4
+2019-01-11 16:54:56,812 INFO: Stats (ID: 128): score=-18.557306 num_expansions=347 time=85.98
+2019-01-11 16:54:56,817 DEBUG: Fetched ID 562 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:54:56,817 INFO: Next sentence (ID: 562): 23 13 14 9 5 4 22 8 17 4 23 9 14 14 4 24 5 4 13 5 14 21 4 5 7 16 13 4 8 6 13 5 12 4 8 19 4 23 8 12 28 4 6 8 20 5 6 13 5 12 4 7 19 6 5 12 4 20 12 7 6 17 7 6 9 8 10 4 19 12 8 18 4 17 10 9 27 5 12 11 9 6 22 4 25 4
+2019-01-11 16:54:56,821 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0562.fst
+2019-01-11 16:56:16,851 INFO: Decoded (ID: 562): 23 13 9 14 5 4 22 8 17 4 23 9 14 14 4 24 5 4 13 5 14 21 9 10 20 4 5 7 16 13 4 8 6 13 5 12 4 6 8 4 23 8 12 28 4 6 8 20 5 6 13 5 12 4 7 19 6 5 12 4 20 12 7 15 17 7 6 9 8 10 4 19 12 8 18 4 17 10 9 27 5 12 11 9 6 22 4 25 4
+2019-01-11 16:56:16,856 INFO: Stats (ID: 562): score=-15.730671 num_expansions=336 time=80.04
+2019-01-11 16:56:16,862 DEBUG: Fetched ID 163 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:56:16,862 INFO: Next sentence (ID: 163): 50 10 4 6 13 5 4 8 6 13 5 12 4 13 7 10 15 4 5 7 16 13 4 7 16 7 15 5 18 9 16 4 19 9 5 14 15 4 10 5 5 15 11 4 11 21 5 16 9 7 14 9 11 6 11 4 9 10 4 8 12 15 5 12 4 6 8 4 21 12 8 20 12 5 11 11 4 25 4
+2019-01-11 16:56:16,867 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0163.fst
+2019-01-11 16:57:20,470 INFO: Decoded (ID: 163): 50 10 4 6 13 5 4 8 6 13 5 12 4 13 7 10 15 4 5 7 16 13 4 7 16 7 15 5 18 9 16 4 19 9 5 14 15 4 10 5 5 15 11 4 11 21 5 16 9 7 14 9 11 6 11 4 9 10 4 8 12 15 5 12 4 6 8 4 21 12 8 20 12 5 11 11 4 25 4
+2019-01-11 16:57:20,471 INFO: Stats (ID: 163): score=-15.400070 num_expansions=302 time=63.61
+2019-01-11 16:57:20,478 DEBUG: Fetched ID 427 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:57:20,478 INFO: Next sentence (ID: 427): 30 13 5 4 7 20 5 4 26 4 9 10 4 18 22 4 27 9 5 23 4 26 4 11 8 18 5 6 9 18 5 11 4 9 11 4 7 4 24 7 12 12 9 5 12 4 6 8 4 15 8 4 11 8 18 5 6 13 9 10 20 11 4 9 10 4 14 9 19 5 4 25 4
+2019-01-11 16:57:20,484 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0427.fst
+2019-01-11 16:58:15,258 INFO: Decoded (ID: 427): 30 13 5 4 7 20 5 4 26 4 9 10 4 18 22 4 27 9 5 23 4 26 4 11 8 18 5 6 9 18 5 11 4 9 11 4 7 4 24 7 12 12 9 5 12 4 6 8 4 15 8 4 11 8 18 5 6 13 9 10 20 4 9 10 4 14 9 19 5 4 25 4
+2019-01-11 16:58:15,259 INFO: Stats (ID: 427): score=-14.088757 num_expansions=274 time=54.78
+2019-01-11 16:58:15,265 DEBUG: Fetched ID 144 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:58:15,266 INFO: Next sentence (ID: 144): 32 10 15 4 6 13 5 22 4 16 7 10 4 18 7 28 5 4 7 4 21 12 8 15 17 16 6 11 4 7 10 15 4 11 5 14 14 4 9 6 4 16 13 5 7 21 5 12 4 6 13 7 10 4 18 8 11 6 4 16 8 17 10 6 12 9 5 11 4 25 4
+2019-01-11 16:58:15,269 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0144.fst
+2019-01-11 16:59:07,912 INFO: Decoded (ID: 144): 32 10 15 4 6 13 5 22 4 16 7 10 4 18 7 28 5 4 7 4 21 12 8 15 17 16 6 4 7 10 15 4 11 5 14 14 4 9 6 4 16 13 5 7 21 5 12 4 6 13 7 10 4 18 8 11 6 4 16 8 17 10 6 12 9 5 11 4 25 4
+2019-01-11 16:59:07,913 INFO: Stats (ID: 144): score=-12.747036 num_expansions=262 time=52.65
+2019-01-11 16:59:07,920 DEBUG: Fetched ID 303 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:59:07,920 INFO: Next sentence (ID: 303): 47 5 7 14 9 11 6 4 21 5 8 21 14 5 4 16 7 10 4 24 5 4 18 8 12 5 4 11 17 16 16 5 11 11 19 17 14 14 4 7 11 4 23 5 4 16 7 10 4 11 5 5 4 9 10 4 13 9 11 6 8 12 22 4 25 4
+2019-01-11 16:59:07,924 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0303.fst
+2019-01-11 16:59:52,713 INFO: Decoded (ID: 303): 47 5 7 14 9 11 6 4 21 5 8 21 14 5 4 16 7 10 4 24 5 4 18 8 12 5 4 11 17 16 16 5 11 11 19 17 14 4 7 11 4 23 5 4 16 7 10 4 11 5 5 4 9 10 4 13 9 11 6 8 12 22 4 25 4
+2019-01-11 16:59:52,714 INFO: Stats (ID: 303): score=-13.272234 num_expansions=238 time=44.79
+2019-01-11 16:59:52,722 DEBUG: Fetched ID 625 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:59:52,722 INFO: Next sentence (ID: 625): 37 10 4 6 8 15 7 22 4 34 11 4 23 8 12 14 15 4 23 13 5 4 13 7 27 5 4 54 17 11 6 4 15 5 27 5 14 8 21 5 15 4 6 13 5 4 19 9 12 11 6 4 7 11 21 5 16 6 4 25 4
+2019-01-11 16:59:52,726 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0625.fst
+2019-01-11 17:00:28,778 INFO: Decoded (ID: 625): 37 10 4 6 8 15 7 22 4 34 11 4 23 8 12 14 15 4 23 5 4 13 7 27 5 4 54 17 11 6 4 15 5 27 5 14 8 21 5 15 4 6 13 5 4 19 9 12 11 6 4 7 11 21 5 16 6 4 25 4
+2019-01-11 17:00:28,779 INFO: Stats (ID: 625): score=-10.866464 num_expansions=222 time=36.06
+2019-01-11 17:00:28,783 DEBUG: Fetched ID 83 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 17:00:28,783 INFO: Next sentence (ID: 83): 44 5 4 28 10 8 23 11 4 6 13 7 6 4 6 13 5 12 5 4 9 11 4 10 8 4 12 5 6 17 12 10 4 9 10 4 13 9 11 4 13 5 14 21 4 6 8 4 8 6 13 5 12 11 4 25 4
+2019-01-11 17:00:28,787 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0083.fst
+2019-01-11 17:00:53,746 INFO: Decoded (ID: 83): 44 5 4 28 10 8 23 11 4 6 13 7 6 4 6 13 5 12 5 4 9 11 4 10 8 4 12 5 6 17 12 10 4 9 10 4 13 9 11 4 13 5 14 21 4 6 8 4 8 6 13 5 12 11 4 25 4
+2019-01-11 17:00:53,769 INFO: Stats (ID: 83): score=-11.197008 num_expansions=204 time=24.99
+2019-01-11 17:00:53,781 DEBUG: Fetched ID 277 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 17:00:53,781 INFO: Next sentence (ID: 277): 37 6 4 17 11 17 7 14 14 22 4 18 7 28 5 11 4 6 13 5 18 4 6 8 4 24 5 4 18 8 12 5 4 21 8 11 6 9 27 5 4 6 8 4 15 8 4 9 6 4 25 4
+2019-01-11 17:00:53,785 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0277.fst
+2019-01-11 17:01:10,986 INFO: Decoded (ID: 277): 37 6 4 17 11 17 7 14 14 22 4 18 7 28 5 11 4 6 13 5 18 4 6 8 4 24 5 4 18 8 12 5 4 21 8 11 9 6 9 27 5 4 6 8 4 15 8 4 9 6 4 25 4
+2019-01-11 17:01:11,815 INFO: Stats (ID: 277): score=-10.030118 num_expansions=173 time=18.03
+2019-01-11 17:01:11,819 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:13,835 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:15,844 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:17,849 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:19,897 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:21,901 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:25,933 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:27,943 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:29,959 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:31,962 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:33,966 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:36,007 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:38,030 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:40,033 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:42,037 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:01:44,041 DEBUG: Fetched ID 673 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 17:01:44,041 INFO: Next sentence (ID: 673): 49 17 12 6 13 5 12 4 18 8 12 5 4 24 22 4 6 13 5 11 5 4 5 27 9 15 5 10 16 5 4 17 4 23 9 14 14 4 7 20 12 5 5 4
+2019-01-11 17:01:44,044 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0673.fst
+2019-01-11 17:02:07,530 INFO: Decoded (ID: 673): 49 17 12 6 13 5 12 4 18 8 12 5 4 8 19 4 6 13 5 11 5 4 5 27 9 15 5 10 16 5 4 17 4 23 9 14 14 4 7 20 12 5 5 4
+2019-01-11 17:02:07,531 INFO: Stats (ID: 673): score=-12.875387 num_expansions=162 time=23.49
+2019-01-11 17:02:07,539 DEBUG: Fetched ID 558 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 17:02:07,539 INFO: Next sentence (ID: 558): 37 6 4 23 8 17 14 15 4 24 5 4 7 4 12 5 7 14 14 22 4 23 7 11 6 5 19 17 14 4 9 15 5 7 10 4 25 4
+2019-01-11 17:02:07,542 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0558.fst
+2019-01-11 17:02:23,026 INFO: Decoded (ID: 558): 37 6 4 23 8 17 14 15 4 24 5 4 7 4 12 5 7 14 14 22 4 23 7 11 6 5 19 17 14 4 9 15 5 7 4 25 4
+2019-01-11 17:02:23,027 INFO: Stats (ID: 558): score=-6.998008 num_expansions=115 time=15.49
+2019-01-11 17:02:23,032 DEBUG: Fetched ID 97 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 17:02:23,033 INFO: Next sentence (ID: 97): 6 13 9 11 4 11 13 7 14 14 4 5 19 19 5 16 6 4 9 10 4 5 41 7 18 11 4 25 4
+2019-01-11 17:02:23,035 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0097.fst
+2019-01-11 17:02:33,649 INFO: Decoded (ID: 97): 6 13 9 11 4 11 13 7 14 14 4 5 19 19 5 16 6 4 9 10 4 5 41 7 18 11 4 25 4
+2019-01-11 17:02:34,471 INFO: Stats (ID: 97): score=-9.761213 num_expansions=102 time=11.44
+2019-01-11 17:02:34,472 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:02:36,475 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:02:38,505 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:02:40,507 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:02:42,527 DEBUG: Could not fetch sentence ID from output/char.translm_5gfst_4_jflegdev/remaining_ids ([Errno 2] No such file or directory). Trying again in 2 seconds...
+2019-01-11 17:02:44,552 INFO: Decoding finished. Time: 2469.00

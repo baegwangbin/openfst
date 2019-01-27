@@ -1,0 +1,51 @@
+2019-01-11 16:20:49,905 DEBUG: Risk-free beam-search pruning enabled
+2019-01-11 16:20:49,905 INFO: Setting up tensor2tensor library...
+INFO:tensorflow:Importing user module tensor2tensor-usr from path /homes/wjb31/src/t2t.17Sep18
+2019-01-11 16:20:49,906 INFO: Importing user module tensor2tensor-usr from path /homes/wjb31/src/t2t.17Sep18
+INFO:tensorflow:Setting T2TModel mode to 'infer'
+2019-01-11 16:20:50,023 INFO: Setting T2TModel mode to 'infer'
+INFO:tensorflow:Setting hparams.layer_prepostprocess_dropout to 0.0
+2019-01-11 16:20:50,024 INFO: Setting hparams.layer_prepostprocess_dropout to 0.0
+INFO:tensorflow:Setting hparams.symbol_dropout to 0.0
+2019-01-11 16:20:50,024 INFO: Setting hparams.symbol_dropout to 0.0
+INFO:tensorflow:Setting hparams.label_smoothing to 0.0
+2019-01-11 16:20:50,024 INFO: Setting hparams.label_smoothing to 0.0
+INFO:tensorflow:Setting hparams.attention_dropout to 0.0
+2019-01-11 16:20:50,025 INFO: Setting hparams.attention_dropout to 0.0
+INFO:tensorflow:Setting hparams.dropout to 0.0
+2019-01-11 16:20:50,025 INFO: Setting hparams.dropout to 0.0
+INFO:tensorflow:Setting hparams.relu_dropout to 0.0
+2019-01-11 16:20:50,025 INFO: Setting hparams.relu_dropout to 0.0
+INFO:tensorflow:Using variable initializer: uniform_unit_scaling
+2019-01-11 16:20:50,181 INFO: Using variable initializer: uniform_unit_scaling
+INFO:tensorflow:Transforming 'targets' with symbol_modality_150_512.targets_bottom
+2019-01-11 16:20:50,224 INFO: Transforming 'targets' with symbol_modality_150_512.targets_bottom
+WARNING:tensorflow:From /homes/wjb31/src/anaconda2-5.2.0-tf.1.10-cpu.air/lib/python2.7/site-packages/tensorflow/python/framework/function.py:986: calling create_op (from tensorflow.python.framework.ops) with compute_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+Shapes are always computed; don't use the compute_shapes as it has no effect.
+2019-01-11 16:20:50,801 WARNING: From /homes/wjb31/src/anaconda2-5.2.0-tf.1.10-cpu.air/lib/python2.7/site-packages/tensorflow/python/framework/function.py:986: calling create_op (from tensorflow.python.framework.ops) with compute_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+Shapes are always computed; don't use the compute_shapes as it has no effect.
+INFO:tensorflow:Building model body
+2019-01-11 16:20:50,814 INFO: Building model body
+INFO:tensorflow:Transforming body output with symbol_modality_150_512.top
+2019-01-11 16:20:55,571 INFO: Transforming body output with symbol_modality_150_512.top
+INFO:tensorflow:Graph was finalized.
+2019-01-11 16:20:56,231 INFO: Graph was finalized.
+INFO:tensorflow:Restoring parameters from /homes/wjb31/MLMI/MLMI3/practical/lm-gec/chars/t2t_train/languagemodel_en_lmgec1b_char/transformer-transformer_base_v2_large_batch8/average/avg_20-0
+2019-01-11 16:20:56,252 INFO: Restoring parameters from /homes/wjb31/MLMI/MLMI3/practical/lm-gec/chars/t2t_train/languagemodel_en_lmgec1b_char/transformer-transformer_base_v2_large_batch8/average/avg_20-0
+INFO:tensorflow:Running local_init_op.
+2019-01-11 16:20:56,742 INFO: Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2019-01-11 16:20:56,802 INFO: Done running local_init_op.
+2019-01-11 16:20:56,936 INFO: Initialized predictor t2t (weight: 0.1875)
+2019-01-11 16:20:56,936 INFO: Initialized predictor fst (weight: 0.171875)
+2019-01-11 16:20:56,989 INFO: Start time: 1547223656.99
+2019-01-11 16:20:56,989 INFO: The --range does not seem to specify a numerical range (invalid literal for int() with base 10: 'output/char.translm_5gfst_4_jflegdev/remaining_ids'). Interpreting as file name..
+2019-01-11 16:20:56,989 DEBUG: Temporary range file: output/char.translm_5gfst_4_jflegdev/sgnmt-tmp.beec51f0-6ddc-4e37-9534-6685db2105c9
+2019-01-11 16:20:56,999 DEBUG: Fetched ID 221 and updated output/char.translm_5gfst_4_jflegdev/remaining_ids
+2019-01-11 16:20:56,999 INFO: Next sentence (ID: 221): 46 13 9 14 5 4 6 13 5 4 16 13 9 14 15 4 11 21 5 10 15 11 4 7 24 8 17 6 4 19 9 27 5 4 13 8 17 12 11 4 8 12 4 14 5 11 11 4 23 9 6 13 4 13 9 11 4 21 7 12 5 10 6 11 4 26 4 7 10 15 4 23 13 5 10 5 27 5 12 4 6 13 7 6 4 16 13 9 14 15 4 23 7 10 6 11 4 6 8 4 20 8 4 8 17 6 4 13 5 4 23 9 14 14 4 18 8 11 6 4 21 12 8 24 7 24 14 22 4 20 8 4 8 17 6 4 23 9 6 13 4 13 9 11 4 19 12 9 5 10 15 11 4 23 13 9 16 13 4 7 12 5 4 13 9 11 4 16 14 7 11 11 18 7 6 5 11 4 26 4 11 8 4 18 8 11 6 4 8 19 4 13 9 11 4 11 16 13 8 8 14 4 14 9 19 5 4 23 9 14 14 4 24 5 4 11 21 5 10 6 4 23 9 6 13 4 13 9 11 4 16 14 7 11 11 18 7 6 5 11 4 26 4 7 10 15 4 6 13 9 11 4 23 9 14 14 4 13 7 27 5 4 7 4 20 12 5 7 6 4 7 19 19 5 16 6 4 8 10 4 13 9 11 4 21 5 12 11 8 10 7 14 9 6 22 4 23 13 9 16 13 4 23 9 14 14 4 15 5 6 5 12 18 9 10 5 4 6 13 5 4 23 7 22 4 6 13 5 4 16 13 9 14 15 4 23 9 14 14 4 12 5 7 16 6 4 6 8 23 7 12 15 11 4 13 9 11 4 11 16 13 8 8 14 4 7 10 15 4 23 9 14 14 4 15 5 6 5 12 18 9 10 5 4 13 8 23 4 13 5 4 23 9 14 14 4 17 11 5 4 13 9 11 4 14 9 19 5 4 25 4
+2019-01-11 16:20:57,014 DEBUG: Read fst from EditAcceptors.5gLM.chars/jfleg_dev/0221.fst
+2019-01-11 17:02:58,269 INFO: Decoded (ID: 221): 46 13 9 14 5 4 6 13 5 4 16 13 9 14 15 4 11 21 5 10 15 11 4 7 24 8 17 6 4 19 9 27 5 4 13 8 17 12 11 4 8 12 4 14 5 11 11 4 23 9 6 13 4 13 9 11 4 21 7 12 5 10 6 11 4 26 4 7 10 15 4 23 13 5 10 5 27 5 12 4 6 13 7 6 4 16 13 9 14 15 4 23 7 10 6 11 4 6 8 4 20 8 4 8 17 6 4 13 5 4 23 9 14 14 4 18 8 11 6 4 21 12 8 24 7 24 14 22 4 20 8 4 8 17 6 4 23 9 6 13 4 13 9 11 4 19 12 9 5 10 15 11 4 23 13 9 16 13 4 7 12 5 4 13 9 11 4 16 14 7 11 11 18 7 6 5 11 4 26 4 11 8 4 18 8 11 6 4 8 19 4 13 9 11 4 11 16 13 8 8 14 4 14 9 19 5 4 23 9 14 14 4 24 5 4 11 21 5 10 6 4 23 9 6 13 4 13 9 11 4 16 14 7 11 11 18 7 6 5 11 4 26 4 7 10 15 4 6 13 9 11 4 23 9 14 14 4 13 7 27 5 4 7 4 20 12 5 7 6 4 7 19 19 5 16 6 4 8 10 4 13 9 11 4 21 5 12 11 8 10 7 14 9 6 22 4 23 13 9 16 13 4 23 9 14 14 4 15 5 6 5 12 18 9 10 5 4 6 13 5 4 23 7 22 4 6 13 5 4 16 13 9 14 15 4 23 9 14 14 4 12 5 7 16 6 4 6 8 23 7 12 15 11 4 13 9 11 4 11 16 13 8 8 14 4 7 10 15 4 23 9 14 14 4 15 5 6 5 12 18 9 10 5 4 13 8 23 4 13 5 4 23 9 14 14 4 17 11 5 4 13 9 11 4 14 9 19 5 4 25 4
+2019-01-11 17:02:58,270 INFO: Stats (ID: 221): score=-70.979862 num_expansions=1611 time=2521.27
+2019-01-11 17:02:58,273 INFO: Decoding finished. Time: 2521.28
